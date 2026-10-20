@@ -1,0 +1,6 @@
+{
+  "name": "South Side Plugged - Texas Gold Rings & Chains",
+  "description": "South Side Plugged (SSP — ★ EST. TEXAS ★) premier e-commerce storefront for solid 10k & 14k gold rings, Miami Cuban links, and chains straight out of Texas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

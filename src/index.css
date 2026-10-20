@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ssp-black: #121214;
+    --ssp-navy: #0A1E46;
+    --ssp-purple: #6A0DAD;
+    --ssp-gold: #F5C542;
+    --ssp-gold-dark: #D4A017;
+  }
+}
+
+/* Texas side stripe & subtle splatters */
+.ssp-page-texture {
+  background-color: #F8F9FA;
+  background-image: 
+    radial-gradient(#6A0DAD 0.75px, transparent 0.75px),
+    radial-gradient(#F5C542 0.75px, transparent 0.75px),
+    radial-gradient(rgba(10, 30, 70, 0.08) 1.5px, transparent 1.5px);
+  background-size: 48px 48px, 64px 64px, 96px 96px;
+  background-position: 0 0, 24px 24px, 12px 36px;
+}
+
+/* Left-side navy and gold Texas stripe */
+.ssp-texas-stripe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: linear-gradient(180deg, #0A1E46 0%, #0A1E46 45%, #F5C542 45%, #F5C542 55%, #6A0DAD 55%, #6A0DAD 100%);
+  z-index: 40;
+  box-shadow: 2px 0 8px rgba(10, 30, 70, 0.15);
+}
+
+/* 3D Gold Text Gradient */
+.gold-foil-text {
+  background: linear-gradient(135deg, #FFF0A0 0%, #F5C542 40%, #D4A017 75%, #F5C542 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-foil-bg {
+  background: linear-gradient(135deg, #FFF0A0 0%, #F5C542 35%, #D4A017 80%, #F5C542 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(135deg, #FFF0A0, #F5C542, #D4A017) 1;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A017;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6A0DAD;
+}
